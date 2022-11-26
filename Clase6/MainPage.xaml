@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clase6.MainPage"
+             >
+
+    <StackLayout>
+        <Label Text="COnsumir WS Get" FontSize="20" HorizontalTextAlignment="Center">
+        </Label>
+        <Label x:Name="texto" Text="">
+        </Label>
+        <ListView x:Name="MyListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label x:Name="lname" Text="{Binding name}">
+                            </Label>
+                            <Label x:Name="l_second_name" Text="{Binding second_name}">
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button x:Name="get_ing"
+                Text="Ingresar"
+                Clicked="get_ing_Clicked">
+        </Button>
+
+    </StackLayout>
+
+</ContentPage>

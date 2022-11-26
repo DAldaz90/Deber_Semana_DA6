@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clase6.VentanaIngreso"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro !"
+                FontSize="Body"
+                HorizontalOptions="Center" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Id" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="t_id" Placeholder="Id" Grid.Row="0" Grid.Column="1"/>
+                
+                <Label Text="Usuario" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="t_name" Placeholder="Nombre" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Razon Social" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="t_second_name" Placeholder="Razon Social" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Telefono" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="t_phone" Placeholder="Telf." Grid.Row="3" Grid.Column="1"/>
+
+                <Button x:Name="get_insert" Text="Insertar" Grid.Row="4" Grid.Column="0" Clicked="get_insert_Clicked"/>
+                <Button x:Name="get_return" Text="Cancelar" Grid.Row="4" Grid.Column="1" Clicked="get_return_Clicked"/>
+                <Button x:Name="get_update" Text="Actualizar" Grid.Row="5" Grid.Column="0" Clicked="get_update_Clicked"/>
+                <Button x:Name="get_delete" Text="Eliminar" Grid.Row="5" Grid.Column="1" Clicked="get_delete_Clicked"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
